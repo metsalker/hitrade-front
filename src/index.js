@@ -1,21 +1,20 @@
 import style from "./_scss/main.scss";
 
 // Start Products List //
-$(document).ready(function(){
-
+$(document).ready(function() {
   $("#price-range").ionRangeSlider({
     type: "double",
     grid: true,
-    prefix:'$',
+    prefix: "$",
     min: -0,
     max: 300,
     from: 30,
     to: 100
-});
+  });
 
-//   active color
-  $('.color-list .color').on("click",function(){
-    $('.color-list .color').removeClass("active");
+  //   active color
+  $(".color-list .color").on("click", function() {
+    $(".color-list .color").removeClass("active");
     $(this).addClass("active");
   });
 });
