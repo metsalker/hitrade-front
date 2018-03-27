@@ -39,9 +39,12 @@ module.exports = {
       filename: "./index.html"
     }),
     new HtmlWebPackPlugin({
-      title: "Custom template using Handlebars",
       template: "src/about.html",
       filename: "./about.html"
+    }),
+    new HtmlWebPackPlugin({
+      template: "src/login.html",
+      filename: "./login.html"
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
